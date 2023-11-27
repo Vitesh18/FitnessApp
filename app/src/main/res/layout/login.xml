@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="525dp"
+        android:text="GymBro"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/LogInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="511dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="172dp"
+        android:text="Log in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PasswordTextBox"
+        android:layout_width="214dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Enter your password"
+        android:labelFor="@id/PasswordTextBox"
+        app:layout_constraintBottom_toTopOf="@+id/LogInButton"
+        app:layout_constraintStart_toStartOf="@+id/UserNameTextBox" />
+
+    <EditText
+        android:id="@+id/UserNameTextBox"
+        android:layout_width="214dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="14dp"
+        android:labelFor="@id/UserNameTextBox"
+        android:ems="10"
+        android:hint="Enter your username"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordTextBox"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="UserName:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/UserNameTextBox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Password:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/PasswordTextBox"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
