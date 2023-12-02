@@ -22,6 +22,7 @@ public class ScreenFirstActivity extends AppCompatActivity {
 
             public void
 
+
             onClick(View v) {
                 // Create an Intent to start the com.example.gymbro2.AccountCreationActivity
                 Intent intent = new Intent(ScreenFirstActivity.this, AccountCreationActivity.class);
